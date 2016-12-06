@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Radius of a circle</title>
+<script>
+function cal1()
+{
+var employee=[
+{"Name":"sam", "Age":22,"salary":10000,"state":"Karnataka","pin":1234},
+{"Name":"Raj", "Age":26,"salary":20000,"state":"Tamil Nadu","pin":8765}
+];
+for(var i=0;i<employee.length;i++)
+{
+	//alert(employee[i].Name);
+	
+var txt = document.createTextNode("<p>Employee Name :" + employee[i].Name+"<br>"+
+"Employee Age :" + employee[i].Age+"<br>"+"Employee salary :" + employee[i].salary+"<br>"+
+"Employee state :" + employee[i].state+"<br>"+"Employee pin :" + employee[i].pin+"<br></p>");
+document.getElementById("ans1").appendChild(txt);
+
+}
+
+}
+
+</script>
+</head>
+
+<body>
+<header><h3>Display All Employee Details</header>
+<button onclick="cal1()">Display Employee Details</button></p></section>
+<div id="ans1"></div>
+</body>
+
+</html>
